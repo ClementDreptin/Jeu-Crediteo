@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jeu</title>
+</head>
+<body>
+	<button id="start-game-btn">Commencer la partie</button>
+
+	<div>
+		<input id="character-input" type="text" name="character-name" placeholder="Nom">
+		<select id="character-select" name="characters">
+			<option value="">--Choisissez un type de personnage--</option>
+			<option value="goblin">Goblin</option>
+			<option value="witch">Sorcière</option>
+			<option value="orcq">Orcq</option>
+		</select>
+		<button id="create-character-btn">Créer un personnage</button>
+	</div>
+
+	<div id="characters"></div>
+
+	<button id="play-btn">Jouer</button>
+
+	<div id="feedback"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</html>
